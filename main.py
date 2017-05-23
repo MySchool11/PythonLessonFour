@@ -57,3 +57,37 @@ bitwiseC = bitwiseA << 2            # bitwiseC = 0011 1100 << 2 = 1111 0000 = 24
 print("bitwiseC = bitwiseA << 2, so bitwiseC = ", bitwiseC)
 bitwiseC = bitwiseA >> 2            # bitwsieC = 0011 1100 >> 2 = 0000 1111 = 15
 print("bitwiseC = bitwiseA >> 2, so bitwiseC = ", bitwiseC)
+
+# If you have a longer and more complex equation such as ((((a+b) / 5) -12) * 25.2), you can use intermediate variables like so -
+a = 20
+b = 30
+ab = a + b
+abdiv = ab / 15
+divminus = abdiv - 12
+print ("\n((((a+b) / 5) -12) * 25.2) where a is 20 and b is 30 = ", divminus * 25.2, "\n")
+
+# strings
+sentence = "I love Python"
+print(sentence)
+print(sentence[3])  # this will print the letter "o" because strings are zero bound so [3] is 4th character
+print(sentence[-3]) # this will print the letter "h" because a negative number starts at [0] and goes down from the last character
+print(sentence[2:6]) # this will print a 'slice' "love" (characters 2 to 6 not including the last number so 2,3,4,5)
+print(sentence[-6:-2]) # this will print a slice "Pyth" (-6,-5,-4,-3)
+print(sentence[2:10:2]) # this will print "lv y" from 2 to 10(9) every second character (2)
+print(sentence[2:12:3]) # this will print "leyo" from 2 to 12(11) every third character (3)
+numberString = "5,433,654,656,657,354,897,123"
+print(numberString[1::4]) # this wil print ",,,,,,," print the character 1 (second character) then every fourth one
+numberString = "1, 2, 3, 4, 5, 6, 7, 8, 9"
+print(numberString[0::3]) # this will print "123456789"
+print("\n")
+# string concatenation
+stringOne = "Must try "
+stringTwo = "harder"
+print(stringOne + stringTwo)  # will print "Must try harder"
+print("help " * 4)  # will print "help help help help "
+print("more " * (b - a)) # any mathematics applied to determine the number of strings to print need to be bracketed
+print("ah... " * 4 + "stayin alive...") # the + appends text to the reprinted strings
+print("\n")
+today = "Saturday"
+print("day" in today)  # weill return True if day is a substring of Saturday (it is) or False if not
+print("Fri" in today)  # False, of course, Fri is not in Saturday
