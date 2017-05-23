@@ -1,2 +1,2 @@
 # PythonLessonFour
-A look at functions in Python
+A further look at variables in Python
