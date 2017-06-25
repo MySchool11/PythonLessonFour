@@ -1,4 +1,4 @@
-__author__ = "Samuel Bancroft"
+__author__ = "Mr Bancroft"
 
 # Python uses operator precedence, this means that mathematical functions (add, subtract, square, root, etc.) are carried
 # out in a strict order if more than one is used in an equation i.e. 2 x 10 + 6 / 4
